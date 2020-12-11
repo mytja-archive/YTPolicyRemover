@@ -8,6 +8,9 @@ var tosinterval = setInterval(removeToS, 50);
 removePaper();
 var paperinterval = setInterval(removePaper, 50);
 
+removeGoogleToS();
+var gtosinterval = setInterval(removeGoogleToS, 50);
+
 function removeLogin(){
   try {
     var element = document.querySelector('ytd-popup-container');
@@ -41,5 +44,17 @@ function removePaper(){
   }
   catch {
     console.log("Paper dialog container not found!");
+  }
+}
+
+function removeGoogleToS(){
+  try {
+    var element = document.querySelector('div.gTMtLb fp-nh');
+    element.remove();
+    console.log("Google ToS container removed succesfully!");
+    clearInterval(gtosinterval);
+  }
+  catch {
+    console.log("Google ToS dialog container not found!");
   }
 }
