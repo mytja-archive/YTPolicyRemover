@@ -15,8 +15,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Chromium-based browsers ${{ github.ref }}
+          tag_name: chromium
+          release_name: Chromium-based browsers
           body: |
           draft: false
           prerelease: false
