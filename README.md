@@ -2,7 +2,7 @@
 Everybody knows that box on YouTube! It is the annoying box, that shows you up for agreeing with the new ToS and to login! Here is an extention to simply remove them!
 
 # How it works?
-After 5 seconds, YouTube will show its popup, our extension blocks it at the same time, so that you can't even see it, or you can see it a little bit! It is very simple!
+After a maximum of 5 seconds, YouTube will show its popup, our extension blocks it at the same time, so that you can't even see it, or you can see it a little bit! It is very simple!
 
 # Bugs
 Report bugs if you find them! Discussion is opened on GitHub! Pull requests are always welcome!
