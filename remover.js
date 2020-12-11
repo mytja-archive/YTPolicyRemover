@@ -1,27 +1,16 @@
 // Here is our remover script
 removeLogin();
-setTimeout(removeLogin, 1000);
-setTimeout(removeLogin, 2000);
-setTimeout(removeLogin, 3000);
-setTimeout(removeLogin, 4000);
-setTimeout(removeLogin, 5000);
-setTimeout(removeLogin, 6000);
-setTimeout(removeLogin, 7000);
+var logininterval = setInterval(removeLogin, 100);
 
 removeToS();
-setTimeout(removeToS, 1000);
-setTimeout(removeToS, 2000);
-setTimeout(removeToS, 3000);
-setTimeout(removeToS, 4000);
-setTimeout(removeToS, 5000);
-setTimeout(removeToS, 6000);
-setTimeout(removeToS, 7000);
+var tosinterval = setInterval(removeToS, 100);
 
 function removeLogin(){
   try {
     var element = document.querySelector('ytd-popup-container');
     element.remove();
     console.log("Popup container removed succesfully!");
+    clearInterval(logininterval);
   }
   catch {
     console.log("Popup container not found!");
@@ -33,6 +22,7 @@ function removeToS(){
     var element = document.querySelector('ytd-consent-bump-lightbox');
     element.remove();
     console.log("ToS container removed succesfully!");
+    clearInterval(tosinterval);
   }
   catch {
     console.log("ToS container not found!");
