@@ -25,3 +25,4 @@ Firefox doesn't require different code from Chromium code, which means, code for
 
 # Plans
 - Code is not that efficient! If YouTube changes anything, code might not work anymore! Report it in issues!
+- To remove ToS notification while searching on Google! This would make this extension not usable only on YT, but also on Google!
