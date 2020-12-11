@@ -5,6 +5,9 @@ var logininterval = setInterval(removeLogin, 50);
 removeToS();
 var tosinterval = setInterval(removeToS, 50);
 
+removePaper();
+var paperinterval = setInterval(removePaper, 50);
+
 function removeLogin(){
   try {
     var element = document.querySelector('ytd-popup-container');
@@ -26,5 +29,17 @@ function removeToS(){
   }
   catch {
     console.log("ToS container not found!");
+  }
+}
+
+function removePaper(){
+  try {
+    var element = document.querySelector('paper-dialog');
+    element.remove();
+    console.log("Paper dialog container removed succesfully!");
+    clearInterval(paperinterval);
+  }
+  catch {
+    console.log("Paper dialog container not found!");
   }
 }
