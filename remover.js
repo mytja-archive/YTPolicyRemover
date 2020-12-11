@@ -2,7 +2,7 @@
 
 
 setTimeout(removeLogin, 5000);
-setTimeout(removeToS, 5000);
+setTimeout(removeToS, 7000);
 
 function removeLogin(){
   try {
