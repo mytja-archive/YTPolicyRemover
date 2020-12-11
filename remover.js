@@ -8,6 +8,12 @@ var tosinterval = setInterval(removeToS, 50);
 removePaper();
 var paperinterval = setInterval(removePaper, 50);
 
+var paperint = 0;
+var tosint = 0;
+var loginint = 0;
+
+var strict = 300;
+
 function removeLogin(){
   try {
     var element = document.querySelector('ytd-popup-container');
@@ -16,7 +22,13 @@ function removeLogin(){
     clearInterval(logininterval);
   }
   catch {
-    console.log("Popup container not found!");
+    if (popupint<strict){
+      console.log("Popup container not found!");
+      popupint = popupint + 1;
+    else {
+      console.log("Stopping search for popup container");
+      clearInterval(logininterval);
+    }
   }
 }
   
@@ -28,7 +40,13 @@ function removeToS(){
     clearInterval(tosinterval);
   }
   catch {
-    console.log("ToS container not found!");
+    if (tosint<strict){
+      console.log("ToS container not found!");
+      tosint = tosint + 1;
+    else {
+      console.log("Stopping search for ToS container");
+      clearInterval(tosinterval);
+    }
   }
 }
 
@@ -40,6 +58,12 @@ function removePaper(){
     clearInterval(paperinterval);
   }
   catch {
-    console.log("Paper dialog container not found!");
+    if (paperint<strict){
+      console.log("Paper dialog container not found!");
+      paperint = paperint + 1;
+    else {
+      console.log("Stopping search for paper dialog container");
+      clearInterval(paperinterval);
+    }
   }
 }
