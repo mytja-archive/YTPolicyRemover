@@ -19,6 +19,8 @@ Chrome is built on Chromium, an open source browser! There are many more browser
 
 Extension managing is I think very similar than on Chrome!
 
+## Firefox
+Firefox doesn't require different code from Chromium code, which means, code for Chromium can work without problems also on Firefox
+
 # Plans
 - Code is not that efficient! If YouTube changes anything, code might not work anymore! Report it in issues!
-- I'm planning to build an extension for Firefox
