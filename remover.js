@@ -1,23 +1,25 @@
 // Here is our remover script
 
 
-try {
-  var element = document.querySelector('ytd-popup-container');
-  element.remove();
-}
-catch {
-  console.log("Popup container not found!");
-}
+setTimeout(removeLogin, 5000);
+setTimeout(removeToS, 5000);
 
-try {
-  var element = document.querySelector('ytd-consent-bump-lightbox');
-  element.remove();
-}
-catch {
-  console.log("ToS container not found!");
+function removeLogin(){
+  try {
+    var element = document.querySelector('ytd-popup-container');
+    element.remove();
+  }
+  catch {
+    console.log("Popup container not found!");
+  }
 }
   
-
 function removeToS(){
-  // Here will be it!
+  try {
+    var element = document.querySelector('ytd-consent-bump-lightbox');
+    element.remove();
+  }
+  catch {
+    console.log("ToS container not found!");
+  }
 }
