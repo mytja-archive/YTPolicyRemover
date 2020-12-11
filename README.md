@@ -7,12 +7,13 @@ After 5 seconds, YouTube will show its popup, our extension blocks it at the sam
 # Bugs
 Report bugs if you find them! Discussion is opened on GitHub! Pull requests are always welcome!
 
+# Updated stable release
+This is a always updated release for all browsers, automated with GitHub Actions on every push: https://github.com/mytja/YTPolicyRemover/releases/tag/stable
+
 # How to load it into
 
 ## Chrome
 Chrome is a very fast and easy to use browser! Just download zip file of code, unpack it, then head over to chrome://extensions and turn on the Developer options! Now you can see 3 options! Pick a 1st one! Pick a folder, with JS files inside and then you have it!
-
-This is a always updated release for Chromium browsers: https://github.com/mytja/YTPolicyRemover/releases/tag/stable
 
 ## Other Chromium based browsers
 Chrome is built on Chromium, an open source browser! There are many more browsers built on Chromium, e.g. Edge, Opera, Brave Browser...
