@@ -1,7 +1,20 @@
 // Here is our remover script
-
-
+removeLogin();
+setTimeout(removeLogin, 1000);
+setTimeout(removeLogin, 2000);
+setTimeout(removeLogin, 3000);
+setTimeout(removeLogin, 4000);
 setTimeout(removeLogin, 5000);
+setTimeout(removeLogin, 6000);
+setTimeout(removeLogin, 7000);
+
+removeToS();
+setTimeout(removeToS, 1000);
+setTimeout(removeToS, 2000);
+setTimeout(removeToS, 3000);
+setTimeout(removeToS, 4000);
+setTimeout(removeToS, 5000);
+setTimeout(removeToS, 6000);
 setTimeout(removeToS, 7000);
 
 function removeLogin(){
