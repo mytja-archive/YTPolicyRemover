@@ -7,6 +7,13 @@ on:
       - "main"
 
 jobs:
+  buildnpm:
+    runs-on: ubuntu-latest
+    name: "Build and test"
+    steps:
+      - uses: "actions/checkout@v2"
+      - uses: "bahmutov/npm-install@v1"
+      - run: "npm install -g wemf"
   update:
     name: "Update latest tag and check for errors in manifest"
     runs-on: "ubuntu-latest"
@@ -15,8 +22,6 @@ jobs:
       # ...
       - name: "Validate yml manifest"
         run: |
-          npm install -g wemf
-          ls
           wemf manifest.json --validate
       
       - name: "Build & test"
