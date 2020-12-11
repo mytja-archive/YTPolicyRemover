@@ -25,6 +25,7 @@ function removeLogin(){
     if (popupint<strict){
       console.log("Popup container not found!");
       popupint = popupint + 1;
+    }
     else {
       console.log("Stopping search for popup container");
       clearInterval(logininterval);
@@ -43,6 +44,7 @@ function removeToS(){
     if (tosint<strict){
       console.log("ToS container not found!");
       tosint = tosint + 1;
+    }
     else {
       console.log("Stopping search for ToS container");
       clearInterval(tosinterval);
@@ -61,6 +63,7 @@ function removePaper(){
     if (paperint<strict){
       console.log("Paper dialog container not found!");
       paperint = paperint + 1;
+    }
     else {
       console.log("Stopping search for paper dialog container");
       clearInterval(paperinterval);
