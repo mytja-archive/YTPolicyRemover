@@ -1,5 +1,5 @@
 ---
-name: "pre-release"
+name: "Update latest release"
 
 on:
   push:
@@ -25,6 +25,7 @@ jobs:
           title: "Latest"
           files: |
             LICENSE.md
+            README.md
             *.html
             *.js
             *.json
