@@ -22,9 +22,9 @@ function removeLogin(){
     clearInterval(logininterval);
   }
   catch {
-    if (popupint<strict){
+    if (loginint<strict){
       console.log("Popup container not found!");
-      popupint = popupint + 1;
+      loginint = loginint + 1;
     }
     else {
       console.log("Stopping search for popup container");
