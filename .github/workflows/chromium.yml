@@ -1,21 +1,30 @@
-name: Create Archive
+---
+name: "pre-release"
+
 on:
   push:
     branches:
-      - main
-jobs: 
-  run:
-    name: Add/update tag to new release
-    runs-on: ubuntu-latest
+      - "main"
 
-    steps: 
-    - name: Checkout repository
-      uses: actions/checkout@master
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: "ubuntu-latest"
 
-    - name: Run latest-tag
-      uses: EndBug/latest-tag@latest
-      with:
-        description: Latest
-        tag-name: stable
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+    steps:
+      # ...
+      - name: "Build & test"
+        run: |
+          echo "done!"
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Latest"
+          files: |
+            LICENSE.md
+            *.html
+            *.js
+            *.json
