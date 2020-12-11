@@ -3,10 +3,6 @@
   "description" : "ToS box remover from YT",
   "version": "1.0",
   "permissions": ["storage"],
-  "background": {
-    "scripts": ["remover.js"],
-    "persistent": false
-  },
   "content_scripts": [
   {
     "matches": [
@@ -14,6 +10,6 @@
     ],
     "js": ["content.js"]
   }
-  ]
+  ],
   "manifest_version": 2
 }
