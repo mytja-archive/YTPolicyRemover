@@ -1,9 +1,9 @@
 // Here is our remover script
 removeLogin();
-var logininterval = setInterval(removeLogin, 100);
+var logininterval = setInterval(removeLogin, 50);
 
 removeToS();
-var tosinterval = setInterval(removeToS, 100);
+var tosinterval = setInterval(removeToS, 50);
 
 function removeLogin(){
   try {
