@@ -7,19 +7,19 @@ on:
       - "main"
 
 jobs:
-  buildnpm:
-    runs-on: ubuntu-latest
-    name: "Build and test"
-    steps:
-      - uses: "actions/checkout@v2"
-      - uses: "bahmutov/npm-install@v1"
-      - run: "npm install -g wemf"
-  update:
-    name: "Update latest tag and check for errors in manifest"
+  commit:
     runs-on: "ubuntu-latest"
-
     steps:
       # ...
+      - name: "NPM install"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+          check-latest: true
+      - run: |
+            npm install
+            npm install -g wemf
       - name: "Validate yml manifest"
         run: |
           wemf manifest.json --validate
