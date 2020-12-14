@@ -11,6 +11,9 @@ var paperinterval = setInterval(removePaper, 50);
 removeGoogleToS();
 var gtosinterval = setInterval(removeGoogleToS, 50);
 
+removeAENewUser();
+var aenucinterval = setInterval(removeAENewUser, 50);
+
 function removeLogin(){
   try {
     var element = document.querySelector('ytd-popup-container');
@@ -56,5 +59,17 @@ function removeGoogleToS(){
   }
   catch {
     console.log("Google ToS dialog container not found!");
+  }
+}
+
+function removeAENewUser(){
+  try {
+    var element = document.querySelector('div.next-overlay-wrapper opened');
+    element.remove();
+    console.log("AE New user coupon dialog removed succesfully!");
+    clearInterval(aenucinterval);
+  }
+  catch {
+    console.log("AliExpress New user coupon dialog container not found!");
   }
 }
