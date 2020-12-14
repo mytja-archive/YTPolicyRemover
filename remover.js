@@ -64,7 +64,7 @@ function removeGoogleToS(){
 
 function removeAENewUser(){
   try {
-    var element = document.querySelector('div.next-overlay-wrapper opened');
+    var element = document.querySelector('div.next-overlay-wrapper.opened');
     element.remove();
     console.log("AE New user coupon dialog removed succesfully!");
     clearInterval(aenucinterval);
