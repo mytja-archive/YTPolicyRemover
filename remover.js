@@ -11,8 +11,8 @@ var paperinterval = setInterval(removePaper, 50);
 removeGoogleToS();
 var gtosinterval = setInterval(removeGoogleToS, 50);
 
-removeAENewUser();
-var aenucinterval = setInterval(removeAENewUser, 50);
+#removeAENewUser();
+#var aenucinterval = setInterval(removeAENewUser, 50);
 
 function removeLogin(){
   try {
