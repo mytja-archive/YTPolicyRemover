@@ -1,7 +1,7 @@
 {
   "name": "YTPolicyRemover",
   "description" : "Annoying box remover from websites",
-  "version": "1.0.2",
+  "version": "1.0.2.1",
   "permissions": ["storage"],
   "author": "mytja",
   "content_scripts": [
