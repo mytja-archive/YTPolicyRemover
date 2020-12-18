@@ -19,7 +19,7 @@ var twslinterval = setInterval(removeTwSL, 50);
 
 function removeLogin(){
   var getUrl = window.location;
-  console.log(getUrl.host);
+  //console.log(getUrl.host);
   if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('ytd-popup-container');
@@ -35,7 +35,7 @@ function removeLogin(){
   
 function removeToS(){
   var getUrl = window.location;
-  console.log(getUrl.host);
+  //console.log(getUrl.host);
   if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('ytd-consent-bump-lightbox');
@@ -51,7 +51,7 @@ function removeToS(){
 
 function removePaper(){
   var getUrl = window.location;
-  console.log(getUrl.host);
+  //console.log(getUrl.host);
   if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('paper-dialog');
@@ -91,7 +91,7 @@ function removeAENewUser(){
 
 function removeTwSL(){ // TWitter Small bottom Login
   var getUrl = window.location;
-  console.log(getUrl.host);
+  //console.log(getUrl.host);
   if (getUrl.host=="twitter.com"){
     try {
       var element = document.getElementById("layers");
