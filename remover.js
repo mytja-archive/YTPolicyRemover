@@ -14,8 +14,8 @@ var gtosinterval = setInterval(removeGoogleToS, 50);
 removeTwSL();
 var twslinterval = setInterval(removeTwSL, 50);
 
-#removeAENewUser();
-#var aenucinterval = setInterval(removeAENewUser, 50);
+//removeAENewUser();
+//var aenucinterval = setInterval(removeAENewUser, 50);
 
 function removeLogin(){
   try {
