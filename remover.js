@@ -30,26 +30,34 @@ function removeLogin(){
 }
   
 function removeToS(){
-  try {
-    var element = document.querySelector('ytd-consent-bump-lightbox');
-    element.remove();
-    console.log("ToS container removed succesfully!");
-    clearInterval(tosinterval);
-  }
-  catch {
-    console.log("ToS container not found!");
+  var getUrl = window.location;
+  console.log(getUrl.host);
+  if (getUrl.host=="youtube.com"){
+    try {
+      var element = document.querySelector('ytd-consent-bump-lightbox');
+      element.remove();
+      console.log("ToS container removed succesfully!");
+      clearInterval(tosinterval);
+    }
+    catch {
+      console.log("ToS container not found!");
+    }
   }
 }
 
 function removePaper(){
-  try {
-    var element = document.querySelector('paper-dialog');
-    element.remove();
-    console.log("Paper dialog container removed succesfully!");
-    clearInterval(paperinterval);
-  }
-  catch {
-    console.log("Paper dialog container not found!");
+  var getUrl = window.location;
+  console.log(getUrl.host);
+  if (getUrl.host=="youtube.com"){
+    try {
+      var element = document.querySelector('paper-dialog');
+      element.remove();
+      console.log("Paper dialog container removed succesfully!");
+      clearInterval(paperinterval);
+    }
+    catch {
+      console.log("Paper dialog container not found!");
+    }
   }
 }
 
