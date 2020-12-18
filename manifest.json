@@ -1,7 +1,7 @@
 {
   "name": "YTPolicyRemover",
-  "description" : "ToS box remover from YT",
-  "version": "1.0.1",
+  "description" : "Annoying box remover from websites",
+  "version": "1.0.2",
   "permissions": ["storage"],
   "author": "mytja",
   "content_scripts": [
