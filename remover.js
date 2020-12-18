@@ -79,6 +79,7 @@ function removeAENewUser(){
 
 function removeTwSL(){ // TWitter Small bottom Login
   var getUrl = window.location;
+  console.log(getUrl.host);
   if (getUrl.host=="twitter.com"){
     try {
       var element = document.getElementById("layers");
