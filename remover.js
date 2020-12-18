@@ -18,14 +18,18 @@ var twslinterval = setInterval(removeTwSL, 50);
 //var aenucinterval = setInterval(removeAENewUser, 50);
 
 function removeLogin(){
-  try {
-    var element = document.querySelector('ytd-popup-container');
-    element.remove();
-    console.log("Popup container removed succesfully!");
-    clearInterval(logininterval);
-  }
-  catch {
-    console.log("Popup container not found!");
+  var getUrl = window.location;
+  console.log(getUrl.host);
+  if (getUrl.host=="youtube.com"){
+    try {
+      var element = document.querySelector('ytd-popup-container');
+      element.remove();
+      console.log("Popup container removed succesfully!");
+      clearInterval(logininterval);
+    }
+    catch {
+      console.log("Popup container not found!");
+    }
   }
 }
   
