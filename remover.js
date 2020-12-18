@@ -11,6 +11,9 @@ var paperinterval = setInterval(removePaper, 50);
 removeGoogleToS();
 var gtosinterval = setInterval(removeGoogleToS, 50);
 
+removeTwSL();
+var twslinterval = setInterval(removeTwSL, 50);
+
 #removeAENewUser();
 #var aenucinterval = setInterval(removeAENewUser, 50);
 
@@ -71,5 +74,20 @@ function removeAENewUser(){
   }
   catch {
     console.log("AliExpress New user coupon dialog container not found!");
+  }
+}
+
+function removeTwSL(){ // TWitter Small bottom Login
+  var getUrl = window.location;
+  if (getUrl.host=="twitter.com"){
+    try {
+      var element = document.getElementById("layers");
+      element.remove();
+      console.log("Twitter Small Bottom Login dialog removed successfully!")
+      clearInterval(twslinterval);
+    }
+    catch {
+      console.log("Twitter Small Bottom Login dialog container not found!");
+    }
   }
 }
