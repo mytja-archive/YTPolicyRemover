@@ -18,9 +18,6 @@ var twslinterval = setInterval(removeTwSL, 50);
 //var aenucinterval = setInterval(removeAENewUser, 50);
 
 function removeLogin(){
-  var getUrl = window.location;
-  //console.log(getUrl.host);
-  if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('ytd-popup-container');
       element.remove();
@@ -30,13 +27,9 @@ function removeLogin(){
     catch {
       console.log("Popup container not found!");
     }
-  }
 }
   
 function removeToS(){
-  var getUrl = window.location;
-  //console.log(getUrl.host);
-  if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('ytd-consent-bump-lightbox');
       element.remove();
@@ -46,13 +39,9 @@ function removeToS(){
     catch {
       console.log("ToS container not found!");
     }
-  }
 }
 
 function removePaper(){
-  var getUrl = window.location;
-  //console.log(getUrl.host);
-  if (getUrl.host=="youtube.com"){
     try {
       var element = document.querySelector('paper-dialog');
       element.remove();
@@ -62,7 +51,6 @@ function removePaper(){
     catch {
       console.log("Paper dialog container not found!");
     }
-  }
 }
 
 function removeGoogleToS(){
